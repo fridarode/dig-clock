@@ -4,17 +4,36 @@
     <meta charset="utf-8">
     <title>Clock</title>
     <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
 
       #clock {
         display: grid;
         position: relative;
-       justify-content: center; 
-        width: 980px;
+        justify-content: center;
+        width: 990px;
         height: 400px;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: midnightblue;
+        background-color: lightgray;
+        text-align: center;
+        width: 500px;
+        margin: auto;
       }
 
       b {
         font-size:300px;
+      }
+
+      p {
+        margin: 80px 0;
+        border-width: 10px;
+        border-style: ridge;
+        border-color: black;
       }
 
       .hours {
@@ -41,15 +60,16 @@
   </head>
   <body>
   <div class="container">
+    <h1>Frida's Color Clock</h1>
     <div class="#clock">
-      <div class="hours">
-      </div>
+      <p class="hours">
+      </p>
       <b>:</b>
-      <div class="minutes">
-      </div>
+      <p class="minutes">
+      </p>
       <b>:</b>
-      <div class="seconds">
-      </div>
+      <p class="seconds">
+      </p>
     </div>
   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
