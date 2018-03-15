@@ -54,7 +54,7 @@ $('document').ready(() => {
         backgroundColor: '#00ffff'
       });
       $('h2').text('Good Afternoon!');
-    } else if (hour >= 18 && hour <= 00) {
+    } else if (hour >= 18 && hour <= 24) {
       $('.container').css({
         backgroundColor: 'black'
       });
