@@ -1,8 +1,5 @@
 $('document').ready(() => {
-  $('*').blur();
-  setTimeout(function(){
-      location.reload();
-    },999);
+
   let day = new Date();
   let hour = day.getHours();
   let minute = day.getMinutes();
@@ -17,6 +14,7 @@ $('document').ready(() => {
   $('.seconds').text(second).css({
       fontSize: '300px',
     });
+
 
     if(second >= 00 && second <= 10) {
       $('.hours').css({ backgroundColor: '#ff0000'});
@@ -63,4 +61,7 @@ $('document').ready(() => {
       });
     };
 
+  setTimeout(function(){
+      location.reload();
+    },999);
 });
